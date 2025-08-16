@@ -28,10 +28,10 @@ module.exports = {
         'fade-in-delay': 'fadeIn 2s ease-out 0.5s forwards',
       },
       keyframes: {
-        fadeIn: {
-          '0%': { opacity: 0, transform: 'translateY(20px)' },
-          '100%': { opacity: 1, transform: 'translateY(0)' },
-        },
+          fadeIn: {
+            '0%': { opacity: 0, transform: 'translateY(20px)' },
+            '100%': { opacity: 1, transform: 'translateY(0)' },
+          },
       },
     },
   },
