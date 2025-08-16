@@ -32,7 +32,7 @@ export default async function Home() {
       </header>
 
       {/* Hero Section */}
-      <main className="relative z-10 pt-24 pb-12 overflow-hidden bg-hero-bg bg-no-repeat bg-cover bg-center">
+      <main className="relative z-10 pt-24 pb-12 overflow-hidden hero-bg bg-no-repeat bg-cover bg-center">
         <div className="absolute inset-0 bg-midnight-blue bg-opacity-60"></div>
         <section className="container mx-auto text-center py-24 px-6 md:py-32 relative z-10 animate-fade-in-delay">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
@@ -49,7 +49,7 @@ export default async function Home() {
       </main>
 
       {/* About Section */}
-      <section id="about" className="py-20 md:py-32 bg-about-bg bg-no-repeat bg-cover bg-center shadow-inner relative">
+      <section id="about" className="py-20 md:py-32 about-bg bg-no-repeat bg-cover bg-center shadow-inner relative">
         <div className="absolute inset-0 bg-slate-gray bg-opacity-75"></div>
         <div className="container mx-auto px-6 max-w-4xl relative z-10">
           <h2 className="text-4xl font-bold mb-8 text-center text-navy-green animate-fade-in">About Me</h2>
