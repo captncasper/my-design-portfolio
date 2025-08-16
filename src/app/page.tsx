@@ -1,16 +1,19 @@
-// Add this import at the top of src/app/page.tsx
-import ContactForm from "@/components/ContactForm";
-
-// ... inside the Contact Section
-<section id="contact" className="py-20 md:py-32 bg-gray-800">
-  <div className="container mx-auto px-6 max-w-2xl">
-    {/* ... other content */}
-    <ContactForm />
-  </div>
-</section>
 import Image from 'next/image';
+import ContactForm from "@/components/ContactForm";
+import { getProjects } from "@/lib/github";
 
-export default function Home() {
+interface Project {
+  id: number;
+  name: string;
+  description: string | null;
+  html_url: string;
+  language: string | null;
+  stargazers_count: number;
+}
+
+export default async function Home() {
+  const projects = await getProjects();
+
   return (
     <div className="min-h-screen bg-gray-900 text-white font-sans antialiased">
       {/* Header */}
@@ -80,41 +83,36 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-12 text-center text-amber-400">
             Featured Projects
           </h2>
-          {/* We'll dynamically generate project cards here later */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {/* Example Project Card - This will be replaced with dynamic data */}
-            <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-              <div className="relative w-full h-56 overflow-hidden">
-                <Image
-                  src="/project-placeholder.jpg"
-                  alt="Project Placeholder"
-                  layout="fill"
-                  objectFit="cover"
-                  className="transition-transform duration-300 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold mb-2">Project Title</h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  A brief description of the project and the technologies used.
-                  This project demonstrates a professional approach to web design
-                  and development.
-                </p>
-                <a
-                  href="https://github.com/captncasper"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-amber-400 font-semibold hover:underline"
-                >
-                  View on GitHub &rarr;
-                </a>
-              </div>
-            </div>
-            {/* End of Example Project Card */}
+            {projects.length > 0 ? (
+              projects.map((project) => (
+                <div key={project.id} className="bg-gray-800 rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                  <div className="p-6">
+                    <h3 className="text-2xl font-semibold mb-2">{project.name}</h3>
+                    <p className="text-gray-400 text-sm mb-4">
+                      {project.description || "No description provided."}
+                    </p>
+                    <div className="flex justify-between items-center text-sm font-medium text-gray-400">
+                      <span>{project.language}</span>
+                      <a
+                        href={project.html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-amber-400 font-semibold hover:underline"
+                      >
+                        View on GitHub &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <p className="text-center text-gray-500 col-span-full">No projects found. Please ensure your GitHub token is valid and your repositories are public.</p>
+            )}
           </div>
         </div>
       </section>
-
+      
       {/* Contact Section */}
       <section id="contact" className="py-20 md:py-32 bg-gray-800">
         <div className="container mx-auto px-6 max-w-2xl">
@@ -125,7 +123,7 @@ export default function Home() {
             Have a project in mind? Fill out the form below to get a custom
             quote and discuss your design needs.
           </p>
-          {/* We'll add the form here in the next step */}
+          <ContactForm />
         </div>
       </section>
 
