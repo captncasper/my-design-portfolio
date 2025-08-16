@@ -32,23 +32,26 @@ export default async function Home() {
       </header>
 
       {/* Hero Section */}
-      <main className="relative z-10 pt-24 pb-12 overflow-hidden">
-        <section className="container mx-auto text-center py-24 px-6 md:py-32 animate-fade-in-delay">
+      <main className="relative z-10 pt-24 pb-12 overflow-hidden bg-hero-bg bg-no-repeat bg-cover bg-center">
+        <div className="absolute inset-0 bg-midnight-blue bg-opacity-60"></div>
+        <section className="container mx-auto text-center py-24 px-6 md:py-32 relative z-10 animate-fade-in-delay">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
             Digital Designs that Tell a Story
           </h1>
           <p className="text-lg md:text-xl text-light-slate mb-8">
-            Showcasing captivating creations and designs to elevate your brand.
+            Showcasing captivating creations and designs inspired by the stunning Sydney coastline.
           </p>
           <a href="#projects" className="bg-navy-green text-midnight-blue px-8 py-3 rounded-full font-bold hover:bg-white transition-colors transform hover:scale-105 inline-block">
             View My Work
           </a>
+          <p className="mt-4 text-xs text-gray-500">Photo by Ricardo Díaz on Unsplash</p>
         </section>
       </main>
 
       {/* About Section */}
-      <section id="about" className="py-20 md:py-32 bg-slate-gray shadow-inner">
-        <div className="container mx-auto px-6 max-w-4xl">
+      <section id="about" className="py-20 md:py-32 bg-about-bg bg-no-repeat bg-cover bg-center shadow-inner relative">
+        <div className="absolute inset-0 bg-slate-gray bg-opacity-75"></div>
+        <div className="container mx-auto px-6 max-w-4xl relative z-10">
           <h2 className="text-4xl font-bold mb-8 text-center text-navy-green animate-fade-in">About Me</h2>
           <p className="text-lg text-light-slate leading-relaxed mb-6 animate-fade-in-delay">
             Hello! I'm CaptnCasper, a digital designer with a passion for creating
@@ -77,6 +80,7 @@ export default async function Home() {
               </p>
             </div>
           </div>
+          <p className="mt-8 text-xs text-gray-400 text-center">Photo by Angus Gray on Unsplash</p>
         </div>
       </section>
 
