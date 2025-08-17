@@ -1,9 +1,9 @@
 .hero-bg {
-  background-image: url('/assets/ricardo-diaz-hZdWeOTY5SQ-unsplash.jpg');
+  background-image: url('/assets/ocean-reef-background-1.jpg');
 }
 
 .about-bg {
-  background-image: url('/assets/angus-gray-OZQ31DvMMcg-unsplash.jpg');
+  background-image: url('/assets/ocean-reef-background-2.jpg');
 }
 @import "tailwindcss";
 
