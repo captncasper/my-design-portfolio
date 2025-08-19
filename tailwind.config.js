@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: {
         'hero-bg': "url('/assets/hero-background.jpg')",
         'about-bg': "url('/assets/about-background.jpg')",
+        'gallery-bg': "url('/assets/neom-mPHOMhm45wk-unsplash.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',

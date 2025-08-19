@@ -1,9 +1,9 @@
 .hero-bg {
-  background-image: url('/assets/ocean-reef-background-1.jpg');
+  background-image: url('/assets/hero-background.jpg');
 }
 
 .about-bg {
-  background-image: url('/assets/ocean-reef-background-2.jpg');
+  background-image: url('/assets/about-background.jpg');
 }
 @import "tailwindcss";
 
