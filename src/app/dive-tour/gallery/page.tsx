@@ -13,9 +13,15 @@ const photos = [
   { src: '/assets/ocean-reef-background-1.jpg', title: 'Deep Blue', category: 'Reef' },
   { src: '/assets/ocean-reef-background-2.jpg', title: 'The Gutter', category: 'Landscape' },
   { src: '/project-placeholder.jpg', title: 'Weedy Seadragon', category: 'Marine Life' },
+  { src: '/assets/about-background.jpg', title: 'Underwater Cavern', category: 'Reef' },
+  { src: '/assets/hero-background.jpg', title: 'Sunlight through Water', category: 'Landscape' },
+  { src: '/assets/neom-FXJf8y_cZA0-unsplash.jpg', title: 'Coral Garden', category: 'Reef' },
+  { src: '/assets/neom-_5TOw0ED9Jk-unsplash.jpg', title: 'Sea Turtle in Blue Water', category: 'Marine Life' },
+  { src: '/assets/neom-mPHOMhm45wk-unsplash.jpg', title: 'Jellyfish Swarm', category: 'Marine Life' },
+  { src: '/assets/noaa-NsvzdXtvyio-unsplash.jpg', title: 'Deep Sea Vent', category: 'Deep Sea' },
 ];
 
-const categories = ['All', 'Reef', 'Landscape', 'Marine Life', 'Wreck'];
+const categories = ['All', 'Reef', 'Landscape', 'Marine Life', 'Wreck', 'Deep Sea'];
 
 export default function GalleryPage() {
   const [filter, setFilter] = useState('All');
@@ -45,7 +51,7 @@ export default function GalleryPage() {
       <div className="grid md:grid-cols-3 gap-8">
         {filteredPhotos.map((photo, index) => (
           <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <Image src={photo.src} alt={photo.title} width={400} height={300} className="w-full h-64 object-cover" />
+            <Image src={photo.src} alt={photo.title} width={400} height={300} className="w-full h-auto object-cover" />
             <div className="p-4">
               <h3 className="text-lg font-semibold">{photo.title}</h3>
             </div>
