@@ -19,6 +19,9 @@ const photos = [
   { src: '/assets/neom-_5TOw0ED9Jk-unsplash.jpg', title: 'Sea Turtle in Blue Water', category: 'Marine Life' },
   { src: '/assets/neom-mPHOMhm45wk-unsplash.jpg', title: 'Jellyfish Swarm', category: 'Marine Life' },
   { src: '/assets/noaa-NsvzdXtvyio-unsplash.jpg', title: 'Deep Sea Vent', category: 'Deep Sea' },
+  { src: '/assets/turtle.jpg', title: 'Sea Turtle', category: 'Marine Life' },
+  { src: '/assets/coral-fish.jpg', title: 'Clownfish in Anemone', category: 'Marine Life' },
+  { src: '/assets/starfish.jpg', title: 'Red Starfish', category: 'Marine Life' },
 ];
 
 const categories = ['All', 'Reef', 'Landscape', 'Marine Life', 'Wreck', 'Deep Sea'];
