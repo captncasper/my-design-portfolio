@@ -178,7 +178,7 @@ const GallerySection = () => (
         {/* Gallery Item 2 - Giorgia Portrait */}
         <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
           <Image
-            src="/giorgia-doglioni-3GgbJx7hg14-unsplash.jpg"
+            src="/assets/giorgia-doglioni-3GgbJx7hg14-unsplash.jpg"
             alt="Portrait Photography Project"
             width={400}
             height={300}
@@ -194,7 +194,7 @@ const GallerySection = () => (
         {/* Gallery Item 3 - Abner Portrait */}
         <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
           <Image
-            src="/abner-abiu-castillo-diaz.jpg"
+            src="/assets/abner-abiu-castillo-diaz.jpg"
             alt="Creative Portrait Design"
             width={400}
             height={300}
@@ -210,7 +210,7 @@ const GallerySection = () => (
         {/* Gallery Item 4 - Iwan Portrait */}
         <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
           <Image
-            src="/iwan_stasch.jpg"
+            src="/assets/iwan_stasch.jpg"
             alt="Professional Photography"
             width={400}
             height={300}
@@ -226,7 +226,7 @@ const GallerySection = () => (
         {/* Gallery Item 5 - Ocean Landscape */}
         <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
           <Image
-            src="/olga-ga-iRgbLpf50IE-unsplash.jpg"
+            src="/assets/olga-ga-iRgbLpf50IE-unsplash.jpg"
             alt="Ocean Landscape Design"
             width={400}
             height={300}
