@@ -162,7 +162,7 @@ const GallerySection = () => (
         {/* Gallery Item 1 - Long Beach */}
         <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
           <Image
-            src="/longbeach.jpg"
+            src="/assets/turtle.jpg"
             alt="Long Beach Design Project"
             width={400}
             height={300}
