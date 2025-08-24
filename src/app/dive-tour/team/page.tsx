@@ -17,7 +17,7 @@ const teamMembers = [
     name: 'John "JC" Cole',
     role: 'Instructor & Gear Specialist',
     bio: 'JC is our go-to expert for all things gear-related. He ensures everything is in top condition and can help you find the perfect fit for a comfortable and safe dive. He is also a certified instructor for all levels.',
-    image: '/assets/timothy-barlin-FGaknWvNbBk-unsplash',
+    image: '/assets/timothy-barlin-FGaknWvNbBk-unsplash.jpg',
   },
 ];
 
